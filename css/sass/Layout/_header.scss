@@ -1,0 +1,47 @@
+.Header {
+    margin-top:2%;
+}
+.navbar-light .navbar-brand {
+    color:#f9f9f9 !important;
+    font-weight:bold;
+    font-size:25px;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-weight:bold;
+    font-size:18px;
+    text-align:center;
+    color:$mainColor  !important;
+    text-transform: uppercase;
+    margin-left:10px;
+}
+ .navbar-light .navbar-nav .nav-link:hover {
+    color:white !important;
+    background-color:$mainColor;
+    letter-spacing:0.5px;
+    border-radius:5px;
+    @include prefixer(transition, all .3s ease-in-out, webkit moz o);
+    @media #{$maxMobile} {
+        text-align:center;
+        float:none;
+        width:100%;
+        transition:none;
+    }
+ }
+.navbar-light .navbar-nav .active>.nav-link {
+    color:#FFF !important;
+}
+.navbar-light .navbar-toggler {
+    background-color:#FFF !important;
+    outline:none;
+}
+.dropdown-item {
+    background-color:#f9f9f9 !important;
+    color:$mainColor !important;
+    @include prefixer(transition, all .1s ease-in-out, webkit moz o);
+}
+.dropdown-item:hover {
+    color: #FFF !important;
+    text-decoration: none;
+    background-color: $mainColor !important;
+    @include prefixer(transition, all .1s ease-in-out, webkit moz o);
+}
